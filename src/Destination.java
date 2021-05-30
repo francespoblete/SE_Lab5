@@ -1,3 +1,7 @@
+/**
+ * Contains the destination associated with a decorated ICleaningMap.
+ * For prototype purposes, the destination is just a String.
+ */
 public class Destination {
     String destination;
 

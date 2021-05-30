@@ -9,8 +9,11 @@ public class AppInterface extends JFrame implements ActionListener{
 
     Action action;
     static Destination destination;
-    static ArrayList<Zone> zonesList = new ArrayList<Zone>();
+    static ArrayList<Zone> zonesList = new ArrayList<>();
 
+    /**
+     * Constructs the GUI of the app
+     */
     public AppInterface() {
 
         JFrame frame = new JFrame("Robovac App");
@@ -111,7 +114,7 @@ public class AppInterface extends JFrame implements ActionListener{
     }
 
     public static void main (String[]args){
-        Controller controllerInstance = Controller.instance();
-        AppInterface appInterface = new AppInterface();
+        Controller.instance();
+        new AppInterface();
     }
 }
